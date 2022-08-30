@@ -1,3 +1,11 @@
+:root {
+    --main-bg-color:  rgba(51, 51, 51,0.1);
+    --main-bg-result: rgb(122, 152, 129);
+    --main-bg-number: #6db9eb;
+    --main-bg-calculator: #FFFFFF;
+    --main-bg-border: #000000;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -13,7 +21,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(231, 231, 231, 0.9);
+    background-color: var(--main-bg-color);
 }
 
 .calc {
@@ -22,8 +30,8 @@ html, body {
     align-items: center;
     height: 600px;
     width: 400px;
-    background-color: #2f3033;
-    border: 3px solid #26ff00;
+    background-color: var(--main-bg-calculator);
+    border: 3px solid var(--main-bg-border);
     border-radius: 2px;
     padding: 10px;
 }
@@ -32,13 +40,13 @@ html, body {
     height: 90px;
     width: 100%;
     border-radius: 10px;
-    border: solid 3px #ffee00;
-    background-color: #ffffff;
+    border: solid 3px var(--main-bg-border);
+    background-color: var(--main-bg-result);
     margin-bottom: 45px;
 }
 
 .buttons {
-    border: solid 1px #ffffff;
+    border: solid 1px var(--main-bg-border);
     height: 457px;
     width: 100%;
 }
